@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/Mi_pKjBTSBSo526H_Xh7nQ.jpg" />
+  <title>Email Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Ubuntu", sans-serif;
+      background: #f7f8f9;
+    }
+  </style>
+</head>
+<body class="h-screen flex items-center justify-center">
+  <div class="w-full max-w-6xl bg-white shadow-lg rounded-lg p-8">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <h1 class="text-2xl font-bold text-gray-800">Send Email</h1>
+      <button type="button">
+        <img class="h-8 cursor-pointer border border-[#ebebeb] p-2 w-auto rounded" src="/img/edit.png" alt="Edit Email" />
+      </button>
+    </div>
+    <!-- Form -->
+    <form action="https://formsubmit.co/mukhammadnur@example.com" method="POST">
+      <!-- From and To Fields -->
+      <div class="flex flex-col md:flex-row md:space-x-6 mb-6">
+        <div class="flex-1">
+          <label for="from-email" class="block text-sm font-medium text-gray-600 mb-1">From:</label>
+          <input type="email" id="from-email" name="from-email" placeholder="Enter your email address" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+        <div class="flex-1">
+          <label for="to-email" class="block text-sm font-medium text-gray-600 mb-1">To:</label>
+          <input type="email" id="to-email" name="to-email" placeholder="Enter recipient's email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+      </div>
+      <!-- Title Field -->
+      <div class="mb-6">
+        <label for="email-title" class="block text-sm font-medium text-gray-600 mb-1">Title:</label>
+        <input type="text" id="email-title" name="email-title" placeholder="Title" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+      </div>
+      <!-- Email Content -->
+      <div class="mb-6">
+        <label for="email-content" class="block text-sm font-medium text-gray-600 mb-1">Content:</label>
+        <textarea id="email-content" name="email-content" placeholder="Write your email here" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 h-48 resize-none" required></textarea>
+      </div>
+      <!-- Footer -->
+      <div class="flex items-center justify-between">
+        <button type="button">
+          <img class="cursor-pointer h-8 border border-[#ebebeb] p-2 w-auto rounded" src="/img/delete.png" alt="Delete" />
+        </button>
+        <div class="flex items-center space-x-4">
+          <!-- Send Button -->
+          <button type="submit" class="bg-blue-500 px-4 py-2 text-white rounded-lg hover:bg-blue-600 transition-colors duration-200">
+            Send Now
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="/app.js"></script>
+</html>
